@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-options {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  background-color: #007bff;
+  position: sticky;
+  top: 0;
+  color: #fff;
+}
+
+ul{
+     display: flex;
+     justify-content: center;
+     gap: 0 20px;
+}
+
+.home,
+.contratos,
+.servicios{
+     color: inherit;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 40px;
+     height: 40px;
+     border-radius: 8px;
+     transition: background-color 0.3s ease;
+}
+
+.home:hover,
+.contratos:hover,
+.servicios:hover{
+     background-color: #0056b3;
+}
+
+.profile {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Estilos para el título */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para las etiquetas */
+.form-label {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Estilos para los inputs */
+.form-name-input,
+.form-lastname-input,
+.form-email-input,
+.form-phone-input,
+.form-direction-input,
+.form-username-input,
+.form-password-input,
+.form-type-user-input,
+.form-ubication-input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Efecto al enfocar los inputs */
+.form-name-input:focus,
+.form-lastname-input:focus,
+.form-email-input:focus,
+.form-phone-input:focus,
+.form-direction-input:focus,
+.form-username-input:focus,
+.form-password-input:focus,
+.form-type-user-input:focus,
+.form-ubication-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  justify-content: space-evenly;
+}
+
+/* Estilos para el botón */
+.form-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para el mensaje de error */
+.error-message {
+  text-align: center;
+  margin-bottom: 10px;
+}

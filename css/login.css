@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* Estilos para el título */
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Estilos para las etiquetas */
+.form-label {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Estilos para los inputs */
+.form-username-input,
+.form-password-input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Efecto al enfocar los inputs */
+.form-username-input:focus,
+.form-password-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-actions{
+	display: flex;
+	flex-direction: row;
+	width: 350px;
+	justify-content: space-evenly;
+}
+/* Estilos para el botón */
+.form-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el enlace de registro */
+a {
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Efecto al pasar el mouse sobre el enlace */
+a:hover {
+  text-decoration: underline;
+}

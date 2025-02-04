@@ -1,0 +1,13 @@
+# Activar mod_rewrite
+RewriteEngine On
+
+# Redirigir URLs con .php a la versión sin .php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteCond %{THE_REQUEST} "^[A-Z]{3,}\s([^.]+)\.php\s"
+RewriteRule ^ %1 [R=301,L]
+
+# Ocultar la extensión .php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]

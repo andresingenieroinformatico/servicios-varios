@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.main-nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  z-index: 10;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  gap: 0 20px;
+}
+
+.home,
+.profile,
+.servicios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.home:hover,
+.profile:hover,
+.servicios:hover {
+  background-color: #0056b3;
+}
+
+.grid-my-services {
+  display: grid;
+  padding: 1.4rem;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.grid-item {
+  position: relative;
+  background-color: #176bc4;
+  width: 190px;
+  height: 190px;
+  border-radius: 14px;
+  color: #fff;
+  padding: 20px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  transition: height 0.3s ease;
+  interpolate-size: allow-keywords;
+}
+
+.grid-item:hover {
+  height: auto;
+}
+
+.head-modal {
+  display: flex;
+  margin: 0.4rem 0;
+}
+
+.tilte-modal {
+  text-wrap: balance;
+  margin-bottom: 0.6rem;
+  font-weight: 800;
+}
+
+.delete-service{
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-service:hover{
+  background-color:#e23647;
+}
+
+.description-modal {
+  font-size: 0.9rem;
+  text-align: justify;
+  text-wrap: balance;
+}
+
+.main-info{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #00448d;
+}
+
+.main-info p {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.price,
+.open-date,
+.user-data,
+.email,
+.phone,
+.name-user, 
+.ubication {
+  display: flex;
+  align-items: center;
+  overflow-wrap: anywhere;
+}
+
+.price::before,
+.open-date::before,
+.user-data::before,
+.email::before,
+.phone::before,
+.name-user::before,
+.ubication::before
+{
+  font-family: 'Material Symbols Outlined';
+  margin-right: 5px;
+  font-size: 1.7rem;
+}
+
+.ubication::before {
+  content: 'location_on';
+}
+
+.price::before {
+  content: 'attach_money';
+}
+
+.open-date::before {
+  content: 'event_available';
+}
+
+.user-data::before{
+  content: 'person';
+}
+
+.email::before{
+  content: 'mail';
+}
+
+.phone::before{
+  content: 'call';
+}
+
+.name-user::before{
+  content: 'id_card';
+}
