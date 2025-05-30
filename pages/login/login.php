@@ -25,7 +25,7 @@
 				<input class="form-username-input" id="user" placeholder="pedro" name="username" required>
 			</div>
 			<div class="form-password">
-				<label for="pwd" class="form-label">Clave:</label>
+				<label for="pwd" class="form-label">Contraseña:</label>
 				<input type="password" class="form-password-input" id="pwd" placeholder="Clave de acceso" name="password" required>
 			</div>
 			<div class="form-actions">
