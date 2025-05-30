@@ -11,7 +11,7 @@
 
 <body>
 	<main class="login">
-		<h2>Inicia Sesion</h2>
+		<h2>Iniciar Sesion</h2>
 
 		<?php
 		if (isset($_GET['error']) && $_GET['error'] == 1) {
@@ -29,7 +29,7 @@
 				<input type="password" class="form-password-input" id="pwd" placeholder="Clave de acceso" name="password" required>
 			</div>
 			<div class="form-actions">
-				<button class="form-button">Inicia sesion</button>
+				<button class="form-button">Iniciar sesion</button>
 				<a href="./../register/register.php">Registrarse</a>
 			</div>
 		</form>
