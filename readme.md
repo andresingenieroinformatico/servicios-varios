@@ -14,3 +14,5 @@
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** PHP
 - **Base de Datos:** MySQL
+
+##desarrollado por daniel santiago angel y andres ferney garcia
