@@ -19,7 +19,7 @@ $conn->close();
 
 <body>
 	<main class="login">
-		<h2>Registrarse</h2>
+		<h2>Registrate</h2>
 
 		<?php
 		if (isset($_GET['error']) && $_GET['error'] == 1) {
